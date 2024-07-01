@@ -71,7 +71,7 @@ body {
 
 .card-images {
     display: flex;
-    flex-direction: row; /* Ensure cards are displayed horizontally */
+    flex-direction: row;
 }
 
 .card {
