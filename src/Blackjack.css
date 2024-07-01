@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/assets/card_table.png') center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.deal-button {
+    position: absolute;
+    top: 25px;
+    width: 30%;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    background-color: white;
+}
+
+.deal-button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.card-label {
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    width: auto;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    background-color: white;
+}
+
+.button-group button:first-child {
+    margin-right: 15px;
+}
+
+.button-group button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-group button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.hand {
+    margin-bottom: 30px;
+}
+
+.card-images {
+    display: flex;
+    flex-direction: row; /* Ensure cards are displayed horizontally */
+}
+
+.card {
+    margin: 0 5px;
+    width: 100px;
+}
+
+.result {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: "Comic Sans MS";
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .deal-button {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .card-label {
+        font-size: 16px;
+    }
+
+    .button-group button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        width: 80px;
+    }
+
+    .result {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-button {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .card-label {
+        font-size: 14px;
+    }
+
+    .button-group button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .card {
+        width: 60px;
+    }
+
+    .result {
+        font-size: 30px;
+    }
+}
